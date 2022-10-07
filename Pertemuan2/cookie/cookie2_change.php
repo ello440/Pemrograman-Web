@@ -1,6 +1,6 @@
 <?php
-$_cookie_name = "user";
-$_cookie_value = "samudra";
+$cookie_name = "user";
+$cookie_value = "samudra";
 setcookie($cookie_name, $cookie_value, time()+3600, "/");
 
 if(isset($_COOKIE[$cookie_name])){

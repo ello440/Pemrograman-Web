@@ -2,7 +2,7 @@
 session_start();
 
 $database = [
-    'username' => 'ello'
+    'username' => 'ello',
     'password' => 'aynun'
 ];
 
@@ -15,13 +15,13 @@ if(isset($_POST['submit'])){
 
         $_SESSION['username'] = $username;
 
-        header('localtion:admin.php');
+        header("Location:admin.php");
     } else {
 
         echo '<script> alert("Username atau password salah!");
         window.location="login-page.php"; </script>';
     }
 } else {
-    echo '<script> window.location=login-page.php; </script>';
+    echo '<script> window.location="login-page.php"; </script>';
 }
 ?>
